@@ -1182,9 +1182,10 @@ footer {
 
 @media (max-width: 480px) {
     .hero-title { font-size: 2rem; }
-    .hero { padding: 140px 0 80px; }
-    .hero-features { margin: 20px 0; }
-    .hero-btns { margin-top: 28px; gap: 12px; }
+    .hero { padding: 180px 0 120px; }
+    .hero-features { margin: 32px 0; }
+    .hero-btns { margin-top: 40px; gap: 16px; }
+    .hero-title { margin-bottom: 24px; }
 }
 
 /* ─── STATS ─── */

@@ -1181,9 +1181,10 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .hero-title { font-size: 1.7rem; }
-    .hero-btns { flex-direction: column; }
-    .hero-btns .btn { flex: unset; width: 100%; }
+    .hero-title { font-size: 2rem; }
+    .hero { padding: 140px 0 80px; }
+    .hero-features { margin: 20px 0; }
+    .hero-btns { margin-top: 28px; gap: 12px; }
 }
 
 /* ─── STATS ─── */

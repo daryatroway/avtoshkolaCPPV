@@ -78,7 +78,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
   if (!consent.checked) {
     consentLabel.classList.add('error');
     consentLabel.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    setTimeout(() => consentLabel.classList.remove('error'), 2500);
     return;
   }
 

@@ -1181,11 +1181,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .hero-title { font-size: 2rem; }
-    .hero { padding: 180px 0 120px; }
-    .hero-features { margin: 32px 0; }
-    .hero-btns { margin-top: 40px; gap: 16px; }
-    .hero-title { margin-bottom: 24px; }
+    .hero { padding: 120px 20px 80px; min-height: 100svh; display: flex; align-items: center; }
+    .hero-title { font-size: 1.75rem; line-height: 1.2; margin-bottom: 20px; }
+    .hero-tag { margin-bottom: 16px; }
+    .hero-features { margin: 0 0 28px; gap: 10px; }
+    .hero-btns { margin-top: 0; gap: 12px; }
 }
 
 /* ─── STATS ─── */

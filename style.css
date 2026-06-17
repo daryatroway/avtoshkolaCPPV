@@ -1180,7 +1180,7 @@ footer {
     .hero-scroll { display: none; }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     .hero-title { font-size: 1.7rem; }
     .hero-btns { flex-direction: column; }
     .hero-btns .btn { flex: unset; width: 100%; }

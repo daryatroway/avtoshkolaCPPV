@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@400;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<!-- Leaflet.js — бесплатная интерактивная карта -->
+
 </head>
 <body>
 
@@ -62,7 +62,7 @@
       <span class="tag">✦ Официальная лицензия · Нижний Новгород</span>
     </div>
     <h1 class="hero-title">
-      Получи права в <em>Нижнем Новгороде</em><br>все категории
+      Получи все категории прав <br><em>в одном месте</em>
     </h1>
     <p class="hero-sub">
       <span class="hero-sub-item">ГИБДД и Гостехнадзор</span>
@@ -123,16 +123,16 @@
 
       <!-- 3: Удобное расположение -->
       <div class="stat-item reveal reveal-delay-2">
-        <div class="stat-num">5 <span style="font-size: 0.6em;">мин</span></div>
-        <div class="stat-label">от метро Московская</div>
+        <div class="stat-num">7 <span style="font-size: 0.6em;">мин</span></div>
+        <div class="stat-label">от метро Канавинская</div>
         <div class="stat-perks">
           <div class="stat-perk">
             <span class="stat-perk-icon">📍</span>
-            <span>ул. Коммунистическая, 2</span>
+            <span>Московское шоссе, 17к1</span>
           </div>
           <div class="stat-perk">
             <span class="stat-perk-icon">🚇</span>
-            <span>5 минут пешком от ст. метро Московская</span>
+            <span>7 минут пешком от ст. метро Канавинская</span>
           </div>
         </div>
       </div>
@@ -179,7 +179,7 @@
       <div class="adv-card reveal reveal-delay-1">
         <div class="adv-icon">📍</div>
         <div class="adv-title">Удобное расположение</div>
-        <div class="adv-text">ул. Коммунистическая, 2 — 5 минут пешком от станции метро Московская. Добираться легко и быстро.</div>
+        <div class="adv-text">Московское шоссе, 17к1 — 7 минут пешком от станции метро Канавинская, 15 минут от Московского вокзала и 5 минут от Канавинского автовокзала.</div>
       </div>
     </div>
   </div>
@@ -342,11 +342,14 @@
         </div>
         <div class="contact-item">
           <span class="contact-label">Адрес</span>
-          <span class="contact-value" style="color: var(--light); font-size: clamp(1rem, 2vw, 1.4rem);">ул. Коммунистическая, 2</span>
+          <span class="contact-value" style="color: var(--light); font-size: clamp(1rem, 2vw, 1.4rem);">Московское шоссе, 17к1</span>
         </div>
         <div class="contact-item">
-          <span class="contact-label">Метро</span>
-          <span class="contact-value" style="color: var(--light); font-size: clamp(0.95rem, 1.8vw, 1.2rem);">🚇 5 мин от ст. Московская</span>
+          <span class="contact-label">Транспортная доступность</span>
+            <span class="contact-value">
+            🚇 7 мин от ст. Канавинская<br>
+            🚆 15 мин от Московского вокзала<br>
+            🚌 5 мин от Канавинского автовокзала </span>
         </div>
         <div class="contacts-actions">
           <a href="tel:+79625073976" class="btn btn-primary">
@@ -544,7 +547,7 @@
 <script>
   // Инициализация карты Leaflet (OpenStreetMap)
   // Координаты: ул. Коммунистическая, 2, Нижний Новгород
-  const mapCoords = [56.2965, 43.9360];
+ const mapCoords = [56.321486, 43.932882];
 
   const map = L.map('map', {
     center: mapCoords,
@@ -576,15 +579,19 @@
 
   L.marker(mapCoords, { icon })
     .addTo(map)
-    .bindPopup(`
-      <div style="font-family:'Manrope',sans-serif;padding:4px 0;">
-        <strong style="display:block;margin-bottom:4px;">ЦППВ — Автошкола</strong>
-        📍 ул. Коммунистическая, 2<br>
-        🚇 5 мин от метро Московская<br>
-        📞 +7 962 507-39-76
-      </div>
-    `, { maxWidth: 220 })
-    .openPopup();
+    L.marker(mapCoords, { icon })
+  .addTo(map)
+  .bindPopup(`
+    <div style="font-family:'Manrope',sans-serif;padding:4px 0;">
+      <strong style="display:block;margin-bottom:4px;">ЦППВ — Автошкола</strong>
+      📍 Московское шоссе, 17к1<br>
+      🚇 7 мин от метро Канавинская<br>
+      🚆 15 мин от Московского вокзала<br>
+      🚌 5 мин от Канавинского автовокзала<br>
+      📞 +7 962 507-39-76
+    </div>
+  `, { maxWidth: 220 })
+  .openPopup();
 </script>
 <script src="main.js"></script>
 </body>

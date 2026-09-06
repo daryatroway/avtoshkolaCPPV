@@ -1626,9 +1626,8 @@ footer {
     .footer-links { gap: 12px; }
 }
 .transport-value {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    color: var(--white);
+    font-size: 18px !important;
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
 }

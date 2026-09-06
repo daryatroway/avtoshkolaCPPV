@@ -367,12 +367,7 @@
 
         <div class="map-container">
       
-          <script
-            type="text/javascript"
-            charset="utf-8"
-            async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A692041decd42b0b9e3c2a570cbc9f06fb224e995df4265ec2419f319846207e4&amp;lang=ru_RU&amp;scroll=true">
-          </script>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A24e60c54b2a7dbd303ddc2505574806aed5c7f4881d5f939c7d68f88be81239f&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
       
         </div>
       
@@ -543,56 +538,6 @@
 </div>
 
 <!-- ── SCRIPTS ─────────────────────────────────────── -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script>
-  // Инициализация карты Leaflet (OpenStreetMap)
-  // Координаты: ул. Коммунистическая, 2, Нижний Новгород
- const mapCoords = [56.321486, 43.932882];
-
-  const map = L.map('map', {
-    center: mapCoords,
-    zoom: 16,
-    scrollWheelZoom: false,
-    zoomControl: true
-  });
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    maxZoom: 19
-  }).addTo(map);
-
-  // Кастомный маркер в цвете сайта
-  const icon = L.divIcon({
-    html: `<div style="
-      width:36px;height:36px;
-      background:linear-gradient(135deg,#2563EB,#30D5C8);
-      border-radius:50% 50% 50% 0;
-      transform:rotate(-45deg);
-      border:3px solid #fff;
-      box-shadow:0 4px 16px rgba(37,99,235,0.5);
-    "></div>`,
-    iconSize: [36, 36],
-    iconAnchor: [18, 36],
-    popupAnchor: [0, -40],
-    className: ''
-  });
-
-  L.marker(mapCoords, { icon })
-    .addTo(map)
-    L.marker(mapCoords, { icon })
-  .addTo(map)
-  .bindPopup(`
-    <div style="font-family:'Manrope',sans-serif;padding:4px 0;">
-      <strong style="display:block;margin-bottom:4px;">ЦППВ — Автошкола</strong>
-      📍 Московское шоссе, 17к1<br>
-      🚇 7 мин от метро Канавинская<br>
-      🚆 15 мин от Московского вокзала<br>
-      🚌 5 мин от Канавинского автовокзала<br>
-      📞 +7 962 507-39-76
-    </div>
-  `, { maxWidth: 220 })
-  .openPopup();
-</script>
 <script src="main.js"></script>
 </body>
 </html>
